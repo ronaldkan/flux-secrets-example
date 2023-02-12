@@ -1,0 +1,5 @@
+creation_rules:
+  - path_regex: .*/deploy/staging/secrets.yaml
+    kms: 'arn:aws:kms:ap-southeast-1:<account_id>:key/<staging_kms_key>'
+  - path_regex: .*/deploy/production/secrets.yaml
+    kms: 'arn:aws:kms:ap-southeast-1:<account_id>:key/<production_kms_key>'
